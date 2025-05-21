@@ -1,0 +1,16 @@
+/* p{
+    color: tomato;
+    font-size: 40px;
+} */
+
+#text{
+    color: tomato;
+}
+
+.text{
+    color: blue;
+}
+
+p{
+    color:chartreuse;
+}
