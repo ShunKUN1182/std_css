@@ -1,8 +1,54 @@
+
+
 body{
-    font-family: MS Pゴシック="sans serif";
+    font-family: MS Pゴシック,"sans-serif";
+
 }
 
-em{
-    font-style: normal;
+h1{
+    text-align: center;
+    color: #c03;
+    font-size:1.3em ;
+    margin: 15px;;
+
+}
+
+h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+}
+
+h3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1em;
+}
+
+.text{
+    text-indent: 1em;
+}
+
+.text::first-letter{
+    font-size: 2em;
+    color:#c30 ;
+}
+
+.text{
+    em{
+        font-style: normal;
+        color: #c30;
+
+}        
+strong{
     color: #c30;
+    font-weight: normal;
+    text-decoration: underline;
+
+}    
+
+}
+
+#inyou{
+    font-size: 12px;
+    text-align: right;
+    font-family:monospace ;
 }
