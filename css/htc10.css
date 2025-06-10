@@ -1,3 +1,28 @@
 body{
-    font-family: ;
+    font-family:ＭＳ Ｐゴシック,sans-serif;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-left: 10px;
+    background-color: #69C;
+    color: #FFF;
+}
+
+h1{
+    font-size: 90%;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    border-left: solid 5px #36F;
+    border-bottom: solid 1px #36F;
+    letter-spacing: 0.4em;
+}
+
+h2,h3{
+    font-size: 80%;
+    color: #9CF;
+}
+
+p{
+    text-indent: 1em;
+    margin: 0;
+    padding: 0;
 }
