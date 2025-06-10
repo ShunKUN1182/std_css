@@ -26,3 +26,15 @@ p{
     margin: 0;
     padding: 0;
 }
+
+#underline{
+    border-bottom:solid 1px #FFC;
+    color: #FFC;
+}
+
+.waku{
+    font-size: 75%;
+    margin: 0;
+    padding: 1.3em;
+    border: solid 1px #666;
+}
