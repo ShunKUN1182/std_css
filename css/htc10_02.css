@@ -1,1 +1,8 @@
-ka
+body{
+font-family: ＭＳ Ｐゴシック,sans-serif;
+font-size: 18px;
+background-color: #7AE;
+background-image:url("../htc10_start/htc10_bkline.jpg" );
+background-repeat: repeat-x;
+background-position: left top;
+}
