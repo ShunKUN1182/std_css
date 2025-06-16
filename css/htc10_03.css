@@ -7,3 +7,40 @@ body{
     background-position: left top;
 }
 
+.title{
+    color: #3F200E;
+    font-size: 20px;
+    border-bottom: 3px solid #8F7517;
+}
+
+.subTitle{
+    color: #3F200E;
+    font-size: 16px;
+    padding-left: 5px;
+    border-left: 3px solid #8F7517;
+}
+
+.set{
+    font-size: 0.7em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 10px;
+    border: 1px dotted #453933;
+}
+
+.set p{
+    font-size: 0.7em;
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.set img{
+    padding: 2px;
+    background-color: #FFF;
+    border: 1px solid #BEBEBE;
+}
