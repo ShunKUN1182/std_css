@@ -44,3 +44,13 @@ body{
     background-color: #FFF;
     border: 1px solid #BEBEBE;
 }
+
+.itemTitle{
+    color: #FFF;
+    padding: 0.3em;
+    background-color: #281105;
+}
+
+#drinkMenu{
+    text-align: right;
+}
