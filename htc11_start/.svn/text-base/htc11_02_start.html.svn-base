@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>美味しいチーズのお店</title>
+</head>
+<body>
+  <h1><img src="images/htc11_02_midasi.gif" name="title" width="350" height="55" alt="おいしいチーズのお店"></h1>
+  <p>
+  <img src="images/htc11_02_top.gif" alt="トップへ"  name="top" width="50" height="50">
+  <img src="images/htc11_02_photo.gif" alt="写真" name="photo" width="50" height="50">
+  <img src="images/htc11_02_map.gif" alt="地図" name="map" width="50" height="50">
+  <img src="images/htc11_02_mail.gif" alt="お問合せ" name="mail" width="50" height="50">
+  <img src="images/htc11_02_cheese.jpg" alt="美味しいチーズの紹介" name="images" width="250" height="250">
+  </p>
+<p>先日行ったお店のチーズがとっても美味しいかったです。<br>
+      今度はみんなで行きましょう！<br>
+      私の一番のオススメはなんていってもチェダーチーズ。<br>
+      パンに乗せて食べると美味しさUPですよね！<br>
+      ほら、みんなも食べたくなった？</p>
+</body>
+
+</html>

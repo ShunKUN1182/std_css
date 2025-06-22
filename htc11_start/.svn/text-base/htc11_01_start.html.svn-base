@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>positionの練習</title>
+</head>
+<body>
+    <h1>Position</h1>
+    <p>この回ではZ-indexプロパティについて学びましょう。<br>
+    postionプロパティは、包含ブロックを基準として配置されます。通常包含ブロックはbody要素になるので、つまりブラウザ画面の一番左上の部分が基準となって配置されます。<br>
+    この課題のようにboxIDを基準として配置を行いたい場合はboxIDを包含ブロックとする為にpostionプロパティをrelativeに設定する事で、中の子要素がboxIDの左上を基準として配置出来るようになります。</p>
+    <p><img src="images/htc11_01_pic01.png" width="199" height="128" alt="イメージ画像１"></p>
+    <p><img src="images/htc11_01_pic02.png" width="199" height="128" alt="イメージ画像２"></p>
+    <p><img src="images/htc11_01_pic03.png" width="199" height="128" alt="イメージ画像３"></p>
+    <p><img src="images/htc11_01_pic04.png" width="199" height="128" alt="イメージ画像４"></p>
+</body>
+</html>
