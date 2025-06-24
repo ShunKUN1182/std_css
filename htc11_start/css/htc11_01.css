@@ -26,5 +26,33 @@ h1{
     width: 600px;
     height: 5em;
     overflow: auto;
-    
+    top: 260px;
+}
+
+#box p{
+    position: absolute;
+}
+
+#photo1{
+    top: 50px;
+    left: 20px;
+    z-index: 1;
+}
+
+#photo2{
+    top: 120px;
+    left: 120px;
+    z-index: 3;
+}
+
+#photo3{
+    top: 50px;
+    left: 220px;
+    z-index: 2;
+}
+
+#photo4{
+    top: 120px;
+    left: 320px;
+    z-index: 4;
 }
