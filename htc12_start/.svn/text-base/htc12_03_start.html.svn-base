@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<title>スローライフカフェ</title>
+<meta http-equiv="Content-Style-Type" content="text/css">
+</head>
+<body>
+<h1><img src="images/htc11_logo.png" alt="スローライフカフェ" width="250" height="90"></h1>
+<p><img src="images/htc12_3_main.jpg" alt="ようこそスローライフカフェへ" width="750" height="240"></p>
+<ul>
+	<li><a href="#"><img src="images/htc12_03_home.jpg" alt="home" width="150" height="60"></a></li>
+    <li><a href="#"><img src="images/htc12_03_food.jpg" alt="food" width="150" height="60"></a></li>
+    <li><a href="#"><img src="images/htc12_03_drink.jpg" alt="drink" width="150" height="60"></a></li>
+    <li><a href="#"><img src="images/htc12_03_about.jpg" alt="about" width="150" height="60"></a></li>
+    <li><a href="#"><img src="images/htc12_03_access.jpg" alt="access" width="150" height="60"></a></li>
+</ul>
+<h2><img src="images/htc12_3_recommend.png" alt="recommend" width="117" height="19"></h2>
+<p>
+<img src="images/htc12_3_drink01.jpg" alt="ラズベリーティー" width="180" height="216"><br>
+ラズベリーティー<br>
+400円
+</p>
+
+<p>
+<img src="images/htc12_3_drink02.jpg" alt="ラズベリーティー" width="180" height="216"><br>
+ラズベリーティー<br>
+400円
+</p>
+
+<h2><img src="images/htc12_03_new.png" alt="new arrival" width="119" height="26"></h2>
+<p>
+<img src="images/htc12_3_drink03.jpg" alt="ラズベリーティー" width="180" height="216"><br>
+ラズベリーティー<br>
+400円
+</p>
+
+<p>copyright c SLcafe all rights reserved.</p>
+
+</body>
+</html>

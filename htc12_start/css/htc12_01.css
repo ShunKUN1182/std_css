@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+}
+
+body{
+    font-family: Arial Black , sans-serif;
+}
+
+h1{
+    font-size: 1.2em;
+    margin: 20px;
+    padding: 0 7px;
+    border-left: solid 5px #F36;
+}
+
+#g_navi{
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    background-color: #F36;
+    height: 80px;
+    border-bottom: solid 1px #C36;
+}
+
+#g_navi li{
+    color: #FFF;
+    font-weight: bold;
+    width: 125px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-right: 1px #FFF dotted;
+    background-color: #F06;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>Float Layout Sample</title>
+</head>
+<body>
+
+<h1><img src="images/htc12_02_title.gif" alt="Float Layout Sample" width="600" height="100"></h1>
+
+<h2>ここがメニュー</h2>
+<ul>
+<li>top</li>
+<li>botton</li>
+<li>botton</li>
+<li>botton</li>
+</ul>
+
+<h2>ここがコンテンツ</h2>
+<p>フロートを指定する際に注意しなければならない点は、<br>
+回り込みをした際に必ず解除を行うこと。<br>
+フロート指定を行った部分から下の部分はすべて回りこみが適応されるので、<br>
+回り込みを終了する部分で解除を行う必要がある。</p>
+
+<p>フッター部分</p>
+
+</body>
+
+</html>

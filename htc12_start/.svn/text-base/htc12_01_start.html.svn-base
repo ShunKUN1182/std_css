@@ -1,0 +1,19 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title>float を使ったナビゲーションの作成</title>
+</head>
+<body>
+<h1>floatプロパティを使ったナビゲーション作成</h1>
+<ul>
+<li>home</li>
+<li>item</li>
+<li>menu</li>
+<li>company</li>
+<li>contact</li>
+</ul>
+</body>
+
+</html>
