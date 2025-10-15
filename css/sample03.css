@@ -1,0 +1,17 @@
+/* メディアクエリの書き方
+
+@media screen and (〇〇){
+} */
+
+h1 {
+    font-size: 100px;
+}
+
+@media screen and (max-width: 480px){
+    h1 {
+        font-size: 24px;
+    }
+}
+
+/* ブレイクポイントは一般的には
+４８０px、７６８px、１０２４px、１２８０pxが多い */
