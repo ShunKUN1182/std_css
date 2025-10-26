@@ -15,7 +15,7 @@ main{
     height: 100vh;
 }
 
-main div {
+main .main_img {
     height: 100%;
     display: flex;
     justify-content: center;
@@ -28,12 +28,32 @@ picture{
     overflow: hidden;
 }
 
-img {
+.main_img img {
     width: 100%;
     height: auto;
     transition: 0.3s;
 }
 
-img:hover {
+.main_img img:hover {
     transform: scale(1.1);
 }
+
+.modal {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal picture {
+    width: 60vw;
+    height: auto;
+}
+
+.modal img {
+    width: 100%;
+    border: #FEFEFE 20px solid;
+} 

@@ -12,9 +12,36 @@
         <h1>test02 - modal window</h1>
     </header>
     <main>
-        <div>
+        <!-- <div class="modal">
+            <picture>
+                <img src="images/img_test01_m.jpg" alt="">
+            </picture>
+        </div> -->
+        <div class="main_img">
             <picture><img src="images/img_test01_s.jpg" alt="景色のしゃしん"></picture>
         </div>
     </main>
+    <script>
+        const addModal = document.querySelector("main");
+        const modalSwich = document.querySelector(".main_img > picture");
+        console.log(modalSwich , addModal);
+
+        modalSwich.addEventListener("click" , ()=>{
+            addModal.insertAdjacentHTML("afterbegin" , `
+                <div class="modal">
+                    <picture>
+                        <img src="images/img_test01_m.jpg" alt="">
+                    </picture>
+                </div>`
+            )
+            const openModal = document.querySelector(".modal");
+            openModal.style.display = "block";
+        })
+
+        openModal.addEventListener("click" , ()=>{
+            openModal.style.display = "none";
+        })
+
+    </script>
 </body>
 </html>
