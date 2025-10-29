@@ -6,22 +6,25 @@
     <title>先生からの試練０１</title>
     <link rel="stylesheet" href="css/ress.css">
     <link rel="stylesheet" href="css/test01.css">
+    <script defer src="js/test01.js"></script>
 </head>
 <body>
     <header>
         <h1>test02 - modal window</h1>
     </header>
     <main>
-        <!-- <div class="modal">
-            <picture>
-                <img src="images/img_test01_m.jpg" alt="">
-            </picture>
-        </div> -->
         <div class="main_img">
             <picture><img src="images/img_test01_s.jpg" alt="景色のしゃしん"></picture>
         </div>
     </main>
-    <script>
+    <div class="modalBack">
+        <!-- <div class="modal"> -->
+            <picture>
+                <img src="images/img_test01_m.jpg" alt="">
+            </picture>
+        <!-- </div> -->
+    </div>
+        <!-- <script>
         const addModal = document.querySelector("main");
         const modalSwich = document.querySelector(".main_img > picture");
         console.log(modalSwich , addModal);
@@ -42,6 +45,6 @@
             openModal.style.display = "none";
         })
 
-    </script>
+    </script> -->
 </body>
 </html>
