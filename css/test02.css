@@ -46,16 +46,27 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    display: none;
+    animation: modalFadeIn 0.5s forwards;
+    /* display: none; */
     picture {
         width: 60vw;
         border: #FEFEFE 20px solid;
+        animation: modalFadeIn 2s forwards;
         img {
             width: 100%;
         }
     }
 }
 
+/* @keyframes modalFadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+ */
 .imgs {
     height: 100vh;
     display: flex;
@@ -63,3 +74,5 @@ header {
     align-items: center;
     gap: 20px;
 }
+
+
