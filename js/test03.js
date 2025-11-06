@@ -40,31 +40,55 @@ function showModal() {
     modalPicture.append(modalBackImg);
     modalDiv.append(modalPicture);
     document.body.append(modalDiv);
-    modalBack.animate(animation, modalBackAnimationTiming);
-    modalBackImg.animate(animation, modalImgAnimationTiming);
+    async function animationA() {
+        try {
+            await modalBack.animate(animation, modalBackAnimationTiming);
+            resolve()
+        }catch{
+            console.log("エラーが発生しました");
+        }
+    }
+    async function animationB() {
+        try {
+            await modalBackImg.animate(animation, modalImgAnimationTiming);
+            resolve()
+        }catch{
+            console.log("エラーが発生しました");
+        }
+    }
+    animationA();
+    animationB();
     modalDiv.addEventListener("click" , closeModal);
 };
 
 function closeModal(event) {
     if(event.target != modalDiv) return;
-    modalBack.animate(reverseAnimation, modalBackAnimationTiming)
+    async function animationC() {
+        try {
+            await modalBack.animate(reverseAnimation, modalBackAnimationTiming)
+            resolve()
+        }catch{
+            console.log("エラーが発生しました");
+        }
+    }
+    animationC();
     document.querySelector(".modalBack").remove();
 };
 
 
-async function calcGo() {
+// async function calcGo() {
 
-    const calc = new Promise((resolve)=>{
-        console.log("start!!");
+//     const calc = new Promise((resolve)=>{
+//         console.log("start!!");
         
-    setTimeout(()=>{
-        const result = 100+1000;
-        resolve(result);
-    },1000)
-});
+//     setTimeout(()=>{
+//         const result = 100+1000;
+//         resolve(result);
+//     },1000)
+// });
 
-console.log(await calc);
+// console.log(await calc);
 
-}
+// }
 
-calcGo();
+// calcGo();
