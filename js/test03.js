@@ -14,7 +14,7 @@ const reverseAnimation = [
 
 
 const modalBackAnimationTiming = {
-    duration: 500,
+    duration: 200,
     iteration: 1,
 };
 
@@ -40,22 +40,6 @@ function showModal() {
     modalPicture.append(modalBackImg);
     modalDiv.append(modalPicture);
     document.body.append(modalDiv);
-    async function animationA() {
-        try {
-            await modalBack.animate(animation, modalBackAnimationTiming);
-            resolve()
-        }catch{
-            console.log("エラーが発生しました");
-        }
-    }
-    async function animationB() {
-        try {
-            await modalBackImg.animate(animation, modalImgAnimationTiming);
-            resolve()
-        }catch{
-            console.log("エラーが発生しました");
-        }
-    }
     animationA();
     animationB();
     modalDiv.addEventListener("click" , closeModal);
@@ -63,21 +47,40 @@ function showModal() {
 
 function closeModal(event) {
     if(event.target != modalDiv) return;
-    async function animationC() {
-        try {
-            await modalBack.animate(reverseAnimation, modalBackAnimationTiming)
-            resolve()
-        }catch{
-            console.log("エラーが発生しました");
-        }
-    }
     animationC();
     document.querySelector(".modalBack").remove();
 };
 
 
-// async function calcGo() {
 
+async function animationA() {
+    try {
+        await modalBack.animate(animation , modalBackAnimationTiming).finished;
+        console.log("Aが無事実行されました");
+    }catch{
+        console.log("Aでエラーが発生しました");
+    }
+}
+
+async function animationB() {
+    try {
+        await modalBackImg.animate(animation, modalImgAnimationTiming).finished;
+        console.log("Bが無事実行されました");
+    }catch{
+        console.log("Bでエラーが発生しました");
+    }
+}
+
+async function animationC() {
+    try {
+        await modalBack.animate(reverseAnimation, modalBackAnimationTiming).finished;
+        console.log("Cが無事実行されました");
+    }catch{
+        console.log("Cでエラーが発生しました");
+    }
+}
+// async function calcGo() {
+    
 //     const calc = new Promise((resolve)=>{
 //         console.log("start!!");
         
