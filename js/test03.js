@@ -19,7 +19,7 @@ const modalBackAnimationTiming = {
 };
 
 const modalImgAnimationTiming = {
-    duration: 2000,
+    duration: 500,
     iteration: 1,
 };
 
@@ -73,12 +73,13 @@ async function animationB() {
 
 async function animationC() {
     try {
-        await modalBack.animate(reverseAnimation, modalBackAnimationTiming).finished;
+        await modalBack.animate(reverseAnimation, modalImgAnimationTiming).finished;
         console.log("Cが無事実行されました");
     }catch{
         console.log("Cでエラーが発生しました");
     }
 }
+
 // async function calcGo() {
     
 //     const calc = new Promise((resolve)=>{
