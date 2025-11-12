@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block{
+            min-width: 240px;
+            padding: 4px;
+            border-radius: 4px;
+            border:solid 1px #BEBEBE;
+            background: #FAFAFA;
+            box-shadow: 1px 1px 4px #BABABA;
+            position: absolute;
+            opacity: 1;
+            button{
+                border: none;
+                display: flex;
+                padding: 8px;
+                width: 100%;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: #FAFAFA;
+                margin: 1px 0;
+                &:hover{
+                    cursor: pointer;
+                    background-color: #F0F0F0;
+                }
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let is_show = false;
+        const fadeIn= [
+        { opacity:0,
+            transformOrigin: 'left top',
+            transform:'scale(0.8)'
+        },
+        { opacity:1,
+            transformOrigin: 'left top',
+            transform:'scale(1)'
+        }
+        ];
+        const fadeOut= [
+        { opacity:0 },
+        { opacity:1 }
+        ];
+        const animOptions = {
+        duration: 200,
+        easing: 'ease-in-out',
+        fill: 'forwards'
+        };
+        // context menus
+        const menus = [
+        'settings',
+        'duplicate',
+        'arhive',
+        'delete'
+        ];
+        // 初期化
+        function initialize(){
+        }
+        // get pointer position
+        function getCursorPos(event){
+        if(!event) return console.log('event not fount');
+        return {
+            client: { x: event.clientX , y:event.clientY }
+        };
+        }
+        // context menu position
+        function showContextPos(event){
+        menuPos = getCursorPos(event);
+        }
+        window.addEventListener('contextmenu' , async (e) => {
+            e.preventDefault();
+            if(is_show) return;
+            is_show = true;
+            const pos = getCursorPos(e);
+            const blockMenu = document.createElement('div');
+            blockMenu.append(
+            ...menus.map( e =>{
+                const btn = document.createElement('button');
+                btn.textContent = e;
+                return btn;
+            })
+            )
+            blockMenu.classList.add('block');
+            blockMenu.style.left = `${pos.client.x}px`;
+            blockMenu.style.top = `${pos.client.y}px`;
+            document.body.append(blockMenu);
+            // set animation in js
+            await blockMenu.animate(fadeIn,animOptions).finished;
+            const onDocClick = async (ev) => {
+            if(blockMenu.contains(ev.target)) return;
+            document.removeEventListener('click',onDocClick, true);
+            try{
+                await closeContext(blockMenu);
+            }
+            finally{
+                blockMenu.remove();
+                is_show = false;
+            }
+            }
+            document.addEventListener('click',onDocClick,{capture: true});
+        });
+        function closeContext(context){
+        const anim = context.animate(fadeOut,animOptions).finished;
+        }
+        initialize();
+    </script>
+</body>
+</html>

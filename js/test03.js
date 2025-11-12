@@ -1,20 +1,20 @@
 const shortImgs = document.querySelectorAll(".short_img");
-const modalBack = document.querySelector(".modalBack");
+// const modalBack = document.querySelector(".modalBack");
 const modalImg = document.querySelector(".modalBack > picture");
 
 const animation = [
-    { opacity: "0"} , 
-    { opacity: "1"} ,
+    { opacity: 0} , 
+    { opacity: 1} ,
 ];
 
 const reverseAnimation = [
-    { opacity: "1"} , 
-    { opacity: "0"} ,
+    { opacity: 1} , 
+    { opacity: 0} ,
 ];
 
 
 const modalBackAnimationTiming = {
-    duration: 200,
+    duration: 50,
     iteration: 1,
 };
 
@@ -47,15 +47,15 @@ function showModal() {
 
 function closeModal(event) {
     if(event.target != modalDiv) return;
-    animationC();
-    document.querySelector(".modalBack").remove();
+    closeAnimation();
+    // document.querySelector(".modalBack").remove();
 };
 
 
 
 async function animationA() {
     try {
-        await modalBack.animate(animation , modalBackAnimationTiming).finished;
+        await document.querySelector(".modalBack").animate(animation , modalBackAnimationTiming).finished;
         console.log("Aが無事実行されました");
     }catch{
         console.log("Aでエラーが発生しました");
@@ -71,10 +71,11 @@ async function animationB() {
     }
 }
 
-async function animationC() {
+async function closeAnimation() {
     try {
-        await modalBack.animate(reverseAnimation, modalImgAnimationTiming).finished;
+        await document.querySelector(".modalBack").animate(reverseAnimation, modalImgAnimationTiming).finished;
         console.log("Cが無事実行されました");
+        document.querySelector(".modalBack").remove();
     }catch{
         console.log("Cでエラーが発生しました");
     }
