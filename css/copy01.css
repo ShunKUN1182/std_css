@@ -1,7 +1,10 @@
+* {
+    background-color: #f4f9ff;
+}
+
 .container {
     display: flex;
     flex-direction: column;
-    background-color: #f4f9ff;
 }
 
 header {
@@ -50,7 +53,7 @@ header {
 
 .detail {
     width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto 100px;
     .detail_box {
         width: 600px;
         margin: 0 auto;
@@ -70,16 +73,67 @@ header {
                     height: 100%;
                 }
             }
-            div {
+            .detail_wrap_text {
                 display: flex;
                 flex-direction: column;
-                h3 {
-                    font-size: 18px;
+                width: 270px;
+                .text_pickup {
+                    display: block;
+                    border-bottom: #dedede 1px solid;
+                    margin-bottom: 16px;
+                    h3 {
+                        font-size: 18px;
+                        color: #333;
+                        padding-bottom: 20px;
+                    }
+                }
+                dl {
+                    display: flex;
+                    flex-direction: column;
+                    section {
+                        display: flex;
+                        justify-content: space-between;
+                        padding-right: 35px;
+                        dd,
+                        dt {
+                            color: #333;
+                            font-size: 14px;
+                        }
+                    }
+                    section:last-child {
+                        border-bottom: #dedede 1px solid;
+                        padding-bottom: 16px;
+                        margin-bottom: 25px;
+                    }
+                }
+                p {
                     color: #333;
-                    padding-bottom: 20px;
+                    font-size: 14px;
+                    margin-bottom: 20px;
+                }
+                a {
+                    transition: 1s;
+                    /* border-bottom: #333 1px solid; */
+                    &:visited,
+                    &:link {
+                        color: #333;
+                        font-size: 14px;
+                    }
+                    &:hover {
+                        letter-spacing: 2.5px;
+                    }
                 }
             }
         }
+    }
+}
+
+footer {
+    width: 600px;
+    margin: 0 auto 15px;
+    p {
+        font-size: 10px;
+        color: #333;
     }
 }
 
