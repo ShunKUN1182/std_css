@@ -1,4 +1,4 @@
-* {
+body {
     background-color: #f4f9ff;
 }
 
@@ -121,6 +121,7 @@ header {
                     }
                     &:hover {
                         letter-spacing: 2.5px;
+                        color: #999;
                     }
                 }
             }
