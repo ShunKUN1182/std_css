@@ -105,5 +105,20 @@ main {
                 border-bottom: #383e45 solid 1px;
             }
         }
+        .bicycle_topic {
+            margin-top: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 960px;
+            padding: 0 4%;
+            .bicycle_topic_card {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                width: calc(100 / 3%);
+            }
+        }
     }
 }
