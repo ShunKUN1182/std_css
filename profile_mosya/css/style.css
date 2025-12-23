@@ -112,13 +112,34 @@ main {
             justify-content: center;
             width: 960px;
             padding: 0 4%;
+            gap: 17px;
             .bicycle_topic_card {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
                 width: calc(100 / 3%);
+                gap: 10px;
+                img {
+                    width: 100%;
+                }
+                h3 {
+                    font-size: 1.6rem;
+                }
+                p {
+                    font-size: 1.4rem;
+                }
             }
         }
+    }
+}
+
+footer {
+    margin: 110px 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+        font-size: 0.8rem;
     }
 }
